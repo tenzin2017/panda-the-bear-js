@@ -57,3 +57,8 @@
 14. Erase personal details from the sidebar
     var bioInfo = document.querySelectorAll('.bio-info');
     bioInfo[0].style.display = 'none';
+
+15. Removing elements from the DOM
+    var timeTravelSkill = document.querySelector('#time-travel');
+    timeTravelSkill.parentElment    // this is not a method , so we didnt use (), selects parent element
+    timeTravelSkill.parentElemnt.remove()
