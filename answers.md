@@ -58,7 +58,19 @@
     var bioInfo = document.querySelectorAll('.bio-info');
     bioInfo[0].style.display = 'none';
 
+**REMOVING ELEMENTS FROM THE DOM***********
 15. Removing elements from the DOM
     var timeTravelSkill = document.querySelector('#time-travel');
     timeTravelSkill.parentElment    // this is not a method , so we didnt use (), selects parent element
     timeTravelSkill.parentElemnt.remove()
+
+**ADDING ELEMENTS TO THE DOM***********
+16. (1). using cloneNode(), clone the pikachu img and insert after the .portfolio-container class
+    var pikachu = document.querySelector('#right-image img');
+    pikachuCloned = pikachu.cloneNode();
+
+    //selects the .portfolio-container
+    var div = document.querySelector('.portfolio-container');
+    div.appendChild(pikachuCloned);
+
+    (2).
