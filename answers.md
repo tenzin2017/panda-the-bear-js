@@ -73,4 +73,7 @@
     var div = document.querySelector('.portfolio-container');
     div.appendChild(pikachuCloned);
 
-    (2).
+    (2).adding cloned image of pikachu 10 times using for loop
+      for(var i=0; i<10; i++){
+        div.appendChild(pikachuCloned);
+      }
