@@ -77,3 +77,27 @@
       for(var i=0; i<10; i++){
         div.appendChild(pikachuCloned);
       }
+
+Adding a new list Item at the end of the list on the sidebar with same css style
+// selects ul element where we have to append child (li)
+var div = document.querySelector('.bio-info');   
+
+var listItem = document.createElement('li');  // create Element type li
+var leftSpan = document.createElement('span'); // create element type span
+var lastUpdated = document.createTextNode('Page last Updated on')  // text msg inside span
+
+leftSpan.append(lastUpdated);     // adding text inside span
+leftSpan.className = 'bio-info-title';  // assign class same as other other spans in the ul
+
+listItem.append(leftSpan);   // adding leftSpan at the end and inside listItem
+listItem.className = 'bio-info-item';  // assigned classname inside li tag
+
+div.append(listItem);
+
+var rightSpan = document.querySelector('span');
+rightSpan.className = 'bio-info-value bio-info-date';
+
+var date = new Date(Date.now());
+rightSpan.innerText = date;
+
+listItem.append(rightSpan);
